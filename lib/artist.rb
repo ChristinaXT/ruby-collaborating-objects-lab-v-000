@@ -26,7 +26,13 @@ class Artist
 	    end
 	  end
 	  
-	  
+	   def print_songs
+	    @songs.each do |song|
+	      puts song.name
+	    end
+	  end
+	end
+
 	  def save
 	    @@all << self #saves the artist name to the all array
 	  end
